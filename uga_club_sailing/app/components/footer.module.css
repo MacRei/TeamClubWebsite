@@ -1,0 +1,23 @@
+.footer {
+  background-color: #1C1C1C;
+  padding: 48px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.iconRow {
+  display: flex;
+  gap: 24px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  color: white;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  color: #BB0D2E;
+  transform: translateY(-2px);
+}

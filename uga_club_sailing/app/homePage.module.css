@@ -1,0 +1,51 @@
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.titles {
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: 32px;
+  text-align: center;
+  color: #BB0D2E;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.imageWrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageTwo {
+  object-fit: cover;
+  display: block;
+}
+
+
+.textWrapper {
+  flex: 1;
+  padding: 64px;
+  display: flex;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .textWrapper {
+    padding: 32px;
+  }
+}
