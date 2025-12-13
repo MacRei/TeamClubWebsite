@@ -19,9 +19,9 @@ export default function Header() {
       </Link>
         <nav className={styles.nav}>
           <Link className={styles.link} href="/">Home</Link> 
-          <Link className={styles.link} href="/dashboard">Get Involved</Link>
-          <Link className={styles.link} href="/about">Officers</Link>
-          <Link className={styles.link} href="/about">Contact Us</Link>
+          <Link className={styles.link} href="/involvement">Get Involved</Link>
+          <Link className={styles.link} href="/team">Officers</Link>
+          <Link className={styles.link} href="/contact">Contact Us</Link>
           <Link className={styles.link} href="/about">Donate</Link>
         </nav>
     </header>
