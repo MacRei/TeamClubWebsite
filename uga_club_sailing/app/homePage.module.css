@@ -14,31 +14,35 @@
 
 .container {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
   width: 100%;
-  min-height: 60vh;
+}
+
+.textWrapper {
+  flex: 1;
+  min-width: 0;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .imageWrapper {
   flex: 1;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .imageTwo {
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
   display: block;
 }
 
-
-.textWrapper {
-  flex: 1;
-  padding: 64px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 
 
 @media (max-width: 768px) {

@@ -36,7 +36,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-      {/*<h1 className={styles.titles}>Where We Sail</h1>*/}
     </section>
   );
 }
