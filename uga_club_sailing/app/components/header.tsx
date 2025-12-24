@@ -1,13 +1,19 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./header.module.css";
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
+  function toggleMenu() {
+    setOpen(!open);
+  }
 
   return (
-    <header className= {styles.header}>
+    <header className={styles.header}>
       <Link href="/">
         <Image
           src="/logoTwo.png"
@@ -17,13 +23,22 @@ export default function Header() {
           priority
         />
       </Link>
-        <nav className={styles.nav}>
-          <Link className={styles.link} href="/">Home</Link> 
-          <Link className={styles.link} href="/involvement">Get Involved</Link>
-          <Link className={styles.link} href="/team">Officers</Link>
-          <Link className={styles.link} href="/contact">Contact Us</Link>
-          <Link className={styles.link} href="/about">Donate</Link>
-        </nav>
+
+      {/* Hamburger icon */}
+      <button className={styles.hamburger} onClick={toggleMenu}>
+        <span />
+        <span />
+        <span />
+      </button>
+
+      {/* Nav container */}
+      <nav className={`${styles.nav} ${open ? styles.open : ""}`}>
+        <Link className={styles.link} href="/">Home</Link> 
+        <Link className={styles.link} href="/involvement">Get Involved</Link>
+        <Link className={styles.link} href="/team">Officers</Link>
+        <Link className={styles.link} href="/contact">Contact Us</Link>
+        <Link className={styles.link} href="/donate">Donate</Link>
+      </nav>
     </header>
   );
-} //Maybe add an FAQ section?
+}

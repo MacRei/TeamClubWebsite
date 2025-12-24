@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const team = [
   { name: "Jesse Bridges", role: "President", year: "Fourth Year", major: "Management", img: "/officerPhoto4.JPG" },
@@ -17,7 +18,13 @@ export default function TeamPage() {
     <section>
       <div>
         <h1 className={styles.title}>Our Team</h1>
-        <p className={styles.paragraph}>Meet the dedicated members of the UGA Club Sailing team! Our elected Executive Board officers for the 2025-2026 school year work closely together, meeting regularly to coordinate team activities and manage the operations of the club both on and off the water. If you'd like to connect with an officer or have any questions about the team, please don't hesitate to reach out.</p>
+        <p className={styles.paragraph}> Meet the dedicated members of the UGA Club Sailing team! Our elected Executive Board officers for the 2025-2026 school year work closely together, meeting regularly to coordinate team activities and manage the operations of the club both on and off the water. If you'd like to connect with an officer or have any
+          questions about the team, please don't hesitate to{" "}
+          <Link href="/contact" className={styles.link}>
+            reach out
+          </Link>.
+        </p>
+
       </div>
 
       <div className={styles.grid}>

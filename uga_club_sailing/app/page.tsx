@@ -39,4 +39,3 @@ export default function Home() {
     </section>
   );
 }
-//Add a section on where we sail

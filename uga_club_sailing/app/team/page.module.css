@@ -10,7 +10,8 @@
   font-size: 18px;
   margin-top: 8px;
   text-align: center;
-  margin: 128px;
+  margin-left: 128px;
+  margin-right: 128px;
 }
 
 .grid {
@@ -62,6 +63,16 @@
   color: #444;
 }
 
+.link {
+  color: #BB0D2E;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
@@ -74,5 +85,10 @@
 
   .imageWrapper {
     justify-content: center;
+  }
+
+  .paragraph {
+    margin-left: 24px;
+    margin-right: 24px;
   }
 }
