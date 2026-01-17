@@ -2,6 +2,7 @@
   font-size: 48px;
   font-weight: bold;
   margin-top: 32px;
+  margin-bottom: 32px;
   text-align: center;
   color: #BB0D2E;
 }
@@ -26,7 +27,7 @@
   flex-direction: row;
   align-items: center;
   gap: 48px;
-  width: 100%;
+  /*width: 100%;*/
   flex-wrap: wrap;
 }
 
@@ -40,17 +41,33 @@
 }
 
 .imageWrapper {
-  flex: 1;
+  /*flex: 1;*/
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 32px;
+  max-width: 600px;
+  width: 100%;
 }
 
 .imageTwo {
+  /*width: 100%; */
+  /*height: auto;*/
+  /*max-width: 600px;*/
+  display: block;
   width: 100%;
   height: auto;
-  max-width: 400px;
-  display: block;
+}
+
+.link {
+  color: #BB0D2E;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 900px) {
