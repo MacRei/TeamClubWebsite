@@ -1,6 +1,9 @@
 # TeamClubWebsite
 
-I designed and built a responsive website for the UGA Sailing Club using React to centralize team information and improve engagement for prospective and current members. The site includes dedicated pages for getting involved, team leadership, donations, and contact, with a mobile-friendly layout that adapts seamlessly across screen sizes. I also implemented a contact workflow to handle user inquiries, focusing on usability, clear navigation, and real-world deployment needs for a student organization.
+www.ugasailing.com
+
+I designed and built a responsive website for the UGA Sailing Club using React to centralize team information and improve engagement for prospective and current members. The site features dedicated pages for getting involved, team leadership, donations, and contact, with a mobile-first layout that adapts seamlessly across screen sizes. <br><br>
+The application is deployed using AWS Amplify, providing continuous deployment from a Git-based workflow, managed hosting, and automatic SSL configuration. I also implemented a contact workflow to handle user inquiries, emphasizing usability, clear navigation, and real-world deployment considerations for a student organization.
 
 <img width="1470" height="838" alt="Screenshot 2026-01-13 at 10 59 14 AM" src="https://github.com/user-attachments/assets/60a73371-d29b-4118-a0e9-18c355155483" />
 
